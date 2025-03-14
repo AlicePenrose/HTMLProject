@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% title %} base {% endtitle %}</title>
+    {% block head %}
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% endblock %}
 </head>
 <body>
-    <h1> I like cum </h1>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer">
+        {% block footer %}
+        &copy; Copyright 2025 by <a href="http://domain.invalid/">you</a>.
+        {% endblock %}
+    </div>
 </body>
 </html>
-<!--  -->
