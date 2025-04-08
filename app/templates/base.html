@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% block head %}
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <title>{% block title %}{% endblock %} - My Webpage</title>
-    {% endblock %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNES: {% block title %}{% endblock %}</title>
 </head>
 <body>
-    <div id="content">{% block content %}{% endblock %}</div>
-    <div id="footer">
-        {% block footer %}
-        &copy; Copyright 2025 by <a href="http://domain.invalid/">you</a>.
-        {% endblock %}
-    </div>
+    <nav>
+        
+    </nav>
+    {% block body%}{% endblock %}
 </body>
 </html>
